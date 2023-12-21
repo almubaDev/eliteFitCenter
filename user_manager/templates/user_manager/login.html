@@ -1,0 +1,19 @@
+{% extends "user_manager/base_user.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class='d-flex justify-content-center align-items-center flex-column w-50 form_container'>
+  <a href="{% url "home" %}">  <img class="logo_form" src="{% static "home/img/logo.png" %}" alt="logo Elite Fit Center"></a>
+  <h4>Iniciar sesión</h4>
+  <form class='user_form ' method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <p class="not_blank">*Campos obligatorios</p>
+    <a href="{% url "password_reset" %}">¿Olvidó su contraseña?</a>
+    <button type="submit">Iniciar sesión</button>
+  </form>
+</div>
+{% comment %} <div class='w-50 secondary_img'></div> {% endcomment %}
+<img class='w-50 secondary_img tang_left' src="{% static "user_manager/img/gente-haciendo-ciclismo-indoor.jpg" %}" alt="">
+{% endblock content %}

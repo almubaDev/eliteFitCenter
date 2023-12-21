@@ -1,0 +1,107 @@
+ .main_user {
+   height: 100vh;
+ }
+
+ .logo_form {
+   height: 100px;
+   width: 100px;
+ }
+
+ .form_container h4 {
+   margin: 18px 0 12px 0;
+ }
+
+ .user_form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 50%;
+ }
+
+ .user_form label {
+   font-size: 'Montserrat', sans-serif;
+   font-size: 12px;
+   font-weight: 200;
+ }
+
+ .user_form input {
+   border-radius: 0%;
+   font-size: 14px;
+   height: 25px;
+   -webkit-border-radius: 0%;
+   -moz-border-radius: 0%;
+   -ms-border-radius: 0%;
+   -o-border-radius: 0%;
+}
+
+.user_form input:focus {
+   border: solid 1px;
+   border-color: var(--highlight-color);
+   box-shadow: none;
+   outline: none;
+}
+.user_form .not_blank {
+   color: var(--text-color);
+   font-size: 8px;
+}
+
+.user_form a {
+   align-self: flex-end;
+   font-size: 12px;
+   margin-bottom: 10px;
+}
+
+.user_form button {
+   align-self: flex-end;
+   background-color: var(--highlight-color);
+   border: none;
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: bold;
+   padding-bottom: 6px;
+   width: 50%;
+}
+
+.secondary_img {
+  background-image: url('./img/gente-haciendo-ciclismo-indoor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.tang_left {
+   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.tang_right {
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+
+.user_form button:hover {
+  background-color: var(--secondary-color);
+}
+
+#id_new_password1_helptext {
+   font-size: 10px;
+}
+
+.invalid-feedback {
+   color: red;
+   font-size: 10px;
+   font-weight: 300;
+   margin: 0;
+}
+
+.not_email_reset {
+   background-image: url('../user_manager/img/no_email_reset.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   padding:  10px 150px;
+}
+
+.not_email_reset h2 {
+   color: var(--highlight-color);
+}

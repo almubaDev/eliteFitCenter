@@ -1,0 +1,11 @@
+{% extends "user_manager/base_user.html" %}
+{% load static %}
+
+{% block content %}
+<div class='not_email_reset d-flex justify-content-center align-items-center flex-column'>
+    <img class="logo_form" src="{% static "home/img/logo.png" %}" alt="logo Elite Fit Center">
+    <h2>El email proporcionado no pertenece a un usuario registrado en Elite Fit Center.</h2>
+</div>
+
+
+{% endblock content %}

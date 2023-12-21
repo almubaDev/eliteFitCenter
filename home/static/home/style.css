@@ -1,0 +1,41 @@
+:root {
+    --prymary-color: #001F3F;
+    --secondary-color: #2ECC71;
+    --text-color: #34495E;
+    --highlight-color: #FFA500;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: azure;
+    height: 35vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--prymary-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_header {
+    width: 50%;
+}
+
+.nav_header ul {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.saludo {
+    background-color: lime;
+}

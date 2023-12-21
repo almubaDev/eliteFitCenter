@@ -1,0 +1,12 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block header %}
+    {% include "home/partials/navbar_home.html" %}
+{% endblock header %}
+
+{% block main %}
+    <h1 class='saludo'>Hola {{ user.full_name }} {{user.age}}</h1>
+{% endblock main %}
